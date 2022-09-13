@@ -5,4 +5,4 @@ COPY package-lock.json ./
 COPY tsconfig.json ./
 RUN npm ci
 COPY . .
-# ENTRYPOINT [ "npm", "dev" ]
+ENTRYPOINT sh -c "npm run dev"
